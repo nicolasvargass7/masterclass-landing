@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masterclass de Dropshipping | Acceso solo para 50 personas</title>
+<meta name="description" content="Masterclass privada de dropshipping. Acceso limitado a 50 personas. Regístrate y únete al grupo de WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#07090f; --bg2:#0d111c; --card:#0f1424; --line:rgba(255,255,255,.09);
+    --text:#f5f3ee; --muted:#9aa3b8;
+    --gold:#e8c374; --gold2:#b98a2e; --gold-ink:#1a1204;
+    --red:#ff3b3b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+    background-image:
+      radial-gradient(900px 520px at 88% -8%,rgba(232,195,116,.14),transparent 60%),
+      radial-gradient(700px 420px at -10% 8%,rgba(70,100,200,.16),transparent 60%);}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+  /* Barra de urgencia superior */
+  .topbar{background:linear-gradient(90deg,#1a0a0a,#2a0d0d,#1a0a0a);border-bottom:1px solid rgba(255,59,59,.3);
+    text-align:center;padding:10px 16px;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);margin-right:10px;
+    box-shadow:0 0 0 0 rgba(255,59,59,.7);animation:pulse 1.6s infinite;vertical-align:middle}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,59,59,.7)}70%{box-shadow:0 0 0 10px rgba(255,59,59,0)}100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}}
+
+  header{padding:26px 0}
+  .brand{font-family:Sora,sans-serif;font-weight:700;letter-spacing:.18em;font-size:.9rem;text-transform:uppercase}
+  .brand span{color:var(--gold)}
+
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:30px 0 90px}
+  .tag{display:inline-flex;align-items:center;font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--gold);border:1px solid rgba(232,195,116,.35);background:rgba(232,195,116,.06);
+    padding:8px 14px;border-radius:999px;margin-bottom:24px}
+  h1{font-family:Sora,sans-serif;font-size:clamp(2.1rem,4.8vw,3.6rem);line-height:1.08;font-weight:800;letter-spacing:-.025em}
+  h1 em{font-style:normal;background:linear-gradient(120deg,#f6dc9c,var(--gold) 45%,var(--gold2));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);font-size:1.12rem;margin:22px 0 30px;max-width:540px}
+  .list{list-style:none;display:grid;gap:14px}
+  .list li{display:flex;gap:14px;align-items:flex-start;color:#dfe3ee}
+  .list .ic{flex:none;width:24px;height:24px;border-radius:50%;margin-top:1px;
+    background:linear-gradient(140deg,#f6dc9c,var(--gold2));display:grid;place-items:center}
+  .meta{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px;margin-top:34px}
+  .chip{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line);
+    padding:12px 18px;border-radius:14px;font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+  .chip b{display:block;color:var(--text);font-size:.95rem;letter-spacing:0;text-transform:none;margin-top:2px}
+
+  /* Tarjeta formulario */
+  .card{position:relative;background:linear-gradient(180deg,#121830,var(--card));border-radius:24px;padding:34px;
+    border:1px solid rgba(232,195,116,.28);
+    box-shadow:0 40px 90px -30px rgba(0,0,0,.85),0 0 80px -30px rgba(232,195,116,.35)}
+  .scarcity{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    background:rgba(255,59,59,.08);border:1px solid rgba(255,59,59,.35);border-radius:12px;
+    padding:11px 14px;margin-bottom:22px;font-size:.82rem;font-weight:600;letter-spacing:.04em}
+  .scarcity .l{display:flex;align-items:center}
+  .scarcity .dot{margin-right:10px}
+  .scarcity small{color:#ffb3b3;font-weight:500}
+  .card h2{font-family:Sora,sans-serif;font-size:1.5rem;margin-bottom:6px;letter-spacing:-.01em}
+  .card p.sub{color:var(--muted);font-size:.95rem;margin-bottom:24px}
+  .field{margin-bottom:15px}
+  label{display:block;font-size:.8rem;font-weight:600;margin-bottom:7px;letter-spacing:.04em;color:#cfd5e4}
+  input[type=text],input[type=email]{width:100%;background:rgba(0,0,0,.35);border:1px solid var(--line);color:var(--text);
+    padding:15px 15px;border-radius:12px;font:inherit;transition:border-color .2s, box-shadow .2s, background .2s}
+  input::placeholder{color:#566082}
+  input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(232,195,116,.18);background:rgba(0,0,0,.5)}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  button{width:100%;margin-top:8px;background:linear-gradient(135deg,#f6dc9c,var(--gold) 50%,var(--gold2));color:var(--gold-ink);
+    border:0;border-radius:12px;padding:17px;font:700 1.02rem Sora,sans-serif;letter-spacing:.01em;cursor:pointer;
+    box-shadow:0 12px 30px -10px rgba(232,195,116,.55);transition:transform .15s, filter .2s, box-shadow .2s}
+  button:hover{filter:brightness(1.08);box-shadow:0 16px 36px -10px rgba(232,195,116,.7)}
+  button:active{transform:scale(.98)}
+  button:disabled{opacity:.65;cursor:wait}
+  .note{font-size:.78rem;color:var(--muted);margin-top:16px;text-align:center}
+  .err{color:#ff8b8b;font-size:.88rem;margin-top:12px;text-align:center;min-height:1em}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:#6c7590;font-size:.82rem;text-align:center}
+  .hp{position:absolute;left:-9999px;opacity:0}
+
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr;gap:40px;padding-bottom:56px}
+    .meta{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:480px){
+    .card{padding:24px 20px}
+    .row{grid-template-columns:1fr}
+    .meta{grid-template-columns:1fr}
+    .topbar{font-size:.72rem}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap"><div class="brand">Drop<span>Masterclass</span></div></div></header>
+
+<main class="wrap hero">
+  <section>
+    <span class="tag">Masterclass privada · En vivo</span>
+    <h1>Construye tu negocio de <em>dropshipping</em> desde cero, con un método claro</h1>
+    <p class="lead">Una sesión en vivo, directa y sin relleno, donde verás paso a paso cómo funciona el modelo, cómo elegir productos ganadores y cómo conseguir tus primeras ventas sin manejar inventario.</p>
+    <ul class="list">
+      <li><span class="ic"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="#1a1204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Cómo funciona realmente el dropshipping y qué necesitas para empezar</span></li>
+      <li><span class="ic"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="#1a1204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Cómo encontrar productos con potencial y proveedores confiables</span></li>
+      <li><span class="ic"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="#1a1204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>El plan de acción para conseguir tus primeras ventas</span></li>
+    </ul>
+    <div class="meta">
+      <div class="chip">Fecha<b>20 de octubre</b></div>
+      <div class="chip">Hora<b>20:00 hrs</b></div>
+      <div class="chip">Modalidad<b>En vivo · Online</b></div>
+    </div>
+  </section>
+
+  <section class="card" id="registro">
+    <div class="scarcity">
+      <span class="l"><span class="dot"></span>ACCESO SOLO PARA 50 PERSONAS</span>
+      <small>Quedan pocos</small>
+    </div>
+    <h2>Reserva tu lugar</h2>
+    <p class="sub">Completa tus datos y te llevaremos al grupo de WhatsApp con toda la información.</p>
+
+    <form id="form" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="family-name" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+      </div>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" id="btn">Registrarme y unirme al grupo</button>
+      <div class="err" id="err" role="alert"></div>
+    </form>
+    <p class="note">Tus datos solo se usan para enviarte información de la masterclass.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="y"></span> DropMasterclass. Todos los derechos reservados.</div></footer>
+
+<script>
+  // ====== CONFIGURA ESTAS 2 LINEAS ======
+  const SHEETS_URL   = "https://script.google.com/macros/s/AKfycbzGD4-8H1C66-RzYfDKu4vebjC-uTa3iTFaXQL45_LriP5Neg1vPIeDY2OvPireXmy1/exec";   // termina en /exec
+  const WHATSAPP_URL = "https://chat.whatsapp.com/CxDosoU7wWqKLB20ZbD1wb?mode=gi_t";
+  // ======================================
+
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const form = document.getElementById('form');
+  const btn  = document.getElementById('btn');
+  const err  = document.getElementById('err');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    err.textContent = '';
+    const nombre = form.nombre.value.trim();
+    const apellido = form.apellido.value.trim();
+    const email = form.email.value.trim();
+
+    if (!nombre || !apellido) { err.textContent = 'Por favor escribe tu nombre y apellido.'; return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { err.textContent = 'Escribe un correo electrónico válido.'; return; }
+    if (form.website.value) { return; } // honeypot anti-bots
+
+    btn.disabled = true;
+    btn.textContent = 'Registrando...';
+
+    const body = new URLSearchParams({ nombre, apellido, email });
+    const irAWhatsApp = () => { window.location.href = WHATSAPP_URL; };
+
+    // Si tarda demasiado, igual lo enviamos al grupo
+    const timer = setTimeout(irAWhatsApp, 5000);
+    try {
+      await fetch(SHEETS_URL, { method: 'POST', mode: 'no-cors', body });
+    } catch (_) { /* aun así redirigimos */ }
+    clearTimeout(timer);
+    irAWhatsApp();
+  });
+</script>
+</body>
+</html>

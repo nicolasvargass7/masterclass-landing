@@ -3,152 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Masterclass de Dropshipping | Acceso solo para 50 personas</title>
-<meta name="description" content="Masterclass privada de dropshipping. Acceso limitado a 50 personas. Regístrate y únete al grupo de WhatsApp.">
+<meta name="theme-color" content="#070c18">
+<meta name="description" content="Masterclass gratuita de ecommerce y dropshipping: miércoles 4 de noviembre de 2026 a las 20:00 (Chile), en vivo por Zoom. Regístrate para recibir acceso.">
+<title>Masterclass Gratuita de Ecommerce | 4 de noviembre · 20:00 Chile</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#07090f; --bg2:#0d111c; --card:#0f1424; --line:rgba(255,255,255,.09);
-    --text:#f5f3ee; --muted:#9aa3b8;
-    --gold:#e8c374; --gold2:#b98a2e; --gold-ink:#1a1204;
-    --red:#ff3b3b;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;
-    -webkit-font-smoothing:antialiased;overflow-x:hidden;
-    background-image:
-      radial-gradient(900px 520px at 88% -8%,rgba(232,195,116,.14),transparent 60%),
-      radial-gradient(700px 420px at -10% 8%,rgba(70,100,200,.16),transparent 60%);}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-
-  /* Barra de urgencia superior */
-  .topbar{background:linear-gradient(90deg,#1a0a0a,#2a0d0d,#1a0a0a);border-bottom:1px solid rgba(255,59,59,.3);
-    text-align:center;padding:10px 16px;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
-  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);margin-right:10px;
-    box-shadow:0 0 0 0 rgba(255,59,59,.7);animation:pulse 1.6s infinite;vertical-align:middle}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,59,59,.7)}70%{box-shadow:0 0 0 10px rgba(255,59,59,0)}100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}}
-
-  header{padding:26px 0}
-  .brand{font-family:Sora,sans-serif;font-weight:700;letter-spacing:.18em;font-size:.9rem;text-transform:uppercase}
-  .brand span{color:var(--gold)}
-
-  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:30px 0 90px}
-  .tag{display:inline-flex;align-items:center;font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--gold);border:1px solid rgba(232,195,116,.35);background:rgba(232,195,116,.06);
-    padding:8px 14px;border-radius:999px;margin-bottom:24px}
-  h1{font-family:Sora,sans-serif;font-size:clamp(2.1rem,4.8vw,3.6rem);line-height:1.08;font-weight:800;letter-spacing:-.025em}
-  h1 em{font-style:normal;background:linear-gradient(120deg,#f6dc9c,var(--gold) 45%,var(--gold2));
-    -webkit-background-clip:text;background-clip:text;color:transparent}
-  .lead{color:var(--muted);font-size:1.12rem;margin:22px 0 30px;max-width:540px}
-  .list{list-style:none;display:grid;gap:14px}
-  .list li{display:flex;gap:14px;align-items:flex-start;color:#dfe3ee}
-  .list .ic{flex:none;width:24px;height:24px;border-radius:50%;margin-top:1px;
-    background:linear-gradient(140deg,#f6dc9c,var(--gold2));display:grid;place-items:center}
-  .meta{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px;margin-top:34px}
-  .chip{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line);
-    padding:12px 18px;border-radius:14px;font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
-  .chip b{display:block;color:var(--text);font-size:.95rem;letter-spacing:0;text-transform:none;margin-top:2px}
-
-  /* Tarjeta formulario */
-  .card{position:relative;background:linear-gradient(180deg,#121830,var(--card));border-radius:24px;padding:34px;
-    border:1px solid rgba(232,195,116,.28);
-    box-shadow:0 40px 90px -30px rgba(0,0,0,.85),0 0 80px -30px rgba(232,195,116,.35)}
-  .scarcity{display:flex;align-items:center;justify-content:space-between;gap:10px;
-    background:rgba(255,59,59,.08);border:1px solid rgba(255,59,59,.35);border-radius:12px;
-    padding:11px 14px;margin-bottom:22px;font-size:.82rem;font-weight:600;letter-spacing:.04em}
-  .scarcity .l{display:flex;align-items:center}
-  .scarcity .dot{margin-right:10px}
-  .scarcity small{color:#ffb3b3;font-weight:500}
-  .card h2{font-family:Sora,sans-serif;font-size:1.5rem;margin-bottom:6px;letter-spacing:-.01em}
-  .card p.sub{color:var(--muted);font-size:.95rem;margin-bottom:24px}
-  .field{margin-bottom:15px}
-  label{display:block;font-size:.8rem;font-weight:600;margin-bottom:7px;letter-spacing:.04em;color:#cfd5e4}
-  input[type=text],input[type=email]{width:100%;background:rgba(0,0,0,.35);border:1px solid var(--line);color:var(--text);
-    padding:15px 15px;border-radius:12px;font:inherit;transition:border-color .2s, box-shadow .2s, background .2s}
-  input::placeholder{color:#566082}
-  input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(232,195,116,.18);background:rgba(0,0,0,.5)}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  button{width:100%;margin-top:8px;background:linear-gradient(135deg,#f6dc9c,var(--gold) 50%,var(--gold2));color:var(--gold-ink);
-    border:0;border-radius:12px;padding:17px;font:700 1.02rem Sora,sans-serif;letter-spacing:.01em;cursor:pointer;
-    box-shadow:0 12px 30px -10px rgba(232,195,116,.55);transition:transform .15s, filter .2s, box-shadow .2s}
-  button:hover{filter:brightness(1.08);box-shadow:0 16px 36px -10px rgba(232,195,116,.7)}
-  button:active{transform:scale(.98)}
-  button:disabled{opacity:.65;cursor:wait}
-  .note{font-size:.78rem;color:var(--muted);margin-top:16px;text-align:center}
-  .err{color:#ff8b8b;font-size:.88rem;margin-top:12px;text-align:center;min-height:1em}
-  footer{border-top:1px solid var(--line);padding:28px 0;color:#6c7590;font-size:.82rem;text-align:center}
-  .hp{position:absolute;left:-9999px;opacity:0}
-
-  @media(max-width:900px){
-    .hero{grid-template-columns:1fr;gap:40px;padding-bottom:56px}
-    .meta{grid-template-columns:1fr 1fr}
-  }
-  @media(max-width:480px){
-    .card{padding:24px 20px}
-    .row{grid-template-columns:1fr}
-    .meta{grid-template-columns:1fr}
-    .topbar{font-size:.72rem}
-  }
-  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:root{--bg:#070c18;--bg2:#0e182a;--panel:#111d31;--text:#f4f7fc;--muted:#a9b6cb;--blue:#65b5ff;--blue2:#2565da;--border:rgba(180,205,241,.16);--green:#73e4b5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--text);line-height:1.65;background:radial-gradient(ellipse 70% 40% at 95% 2%,rgba(36,103,224,.25),transparent),radial-gradient(ellipse 50% 45% at 0 45%,rgba(23,72,145,.12),transparent),var(--bg);overflow-x:hidden}
+a{color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.topbar{padding:10px 20px;text-align:center;background:#102449;color:#dcecff;font-size:.79rem;font-weight:800;letter-spacing:.06em}
+.topbar span{color:#89cbff}
+header{border-bottom:1px solid var(--border)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:800 1.04rem Sora,sans-serif;letter-spacing:.025em}.brand b{color:var(--blue)}.navlink{border:1px solid var(--border);border-radius:999px;padding:10px 18px;text-decoration:none;font-weight:800;font-size:.83rem;background:rgba(255,255,255,.04)}.navlink:hover{border-color:var(--blue)}
+.hero{padding:86px 0 72px;display:grid;grid-template-columns:minmax(0,1.13fr) minmax(340px,.87fr);gap:58px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 15px;border:1px solid rgba(101,181,255,.32);border-radius:999px;background:rgba(68,152,255,.09);color:#b2dcff;font-size:.77rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.pulse{height:8px;width:8px;background:var(--green);border-radius:50%;box-shadow:0 0 0 5px rgba(115,228,181,.1)}
+h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Sora,sans-serif}h1{font-size:clamp(2.25rem,4.5vw,4rem);line-height:1.14;letter-spacing:-.055em;margin:25px 0}h1 em{font-style:normal;color:#81c7ff}.lead{font-size:1.09rem;color:var(--muted);max-width:610px;line-height:1.85}.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:34px}.fact{padding:17px 15px;border:1px solid var(--border);background:rgba(255,255,255,.035);border-radius:16px}.fact small{display:block;color:var(--muted);font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.fact strong{display:block;margin-top:5px;font-size:.9rem}
+.formcard{position:relative;border:1px solid rgba(112,183,255,.35);border-radius:25px;background:linear-gradient(150deg,rgba(29,50,85,.97),rgba(13,22,39,.99));padding:36px;box-shadow:0 30px 85px rgba(0,0,0,.36),0 0 65px rgba(33,105,226,.09)}.formcard:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,#2b73df,#83caff);border-radius:25px 25px 0 0}.free{display:inline-flex;padding:6px 12px;border-radius:8px;background:rgba(115,228,181,.12);color:#a6f3d3;font-weight:800;font-size:.76rem;letter-spacing:.06em;margin-bottom:15px}.formcard h2{font-size:1.65rem;line-height:1.3;margin:0 0 8px}.sub{color:#b8c6da;font-size:.91rem;margin:0 0 25px}form .fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}label{display:block;margin-bottom:7px;color:#d7e1f1;font-size:.8rem;font-weight:800}input[type=text],input[type=email]{width:100%;padding:14px 13px;color:#fff;background:#091326;border:1px solid #31445e;border-radius:11px;font:inherit;min-width:0;outline:none}input:focus{border-color:#78beff;box-shadow:0 0 0 3px rgba(101,181,255,.14)}.field{margin-bottom:16px}.hp{position:absolute;left:-9999px;opacity:0}button{display:block;width:100%;border:0;border-radius:12px;padding:17px 15px;background:linear-gradient(120deg,#80c7ff,#398fff);color:#05162a;font:800 .95rem Sora,sans-serif;cursor:pointer;box-shadow:0 12px 30px rgba(40,128,255,.22);transition:transform .2s,filter .2s}button:hover{filter:brightness(1.08);transform:translateY(-2px)}button:disabled{opacity:.7;cursor:wait}.note{color:#91a5c0;font-size:.75rem;text-align:center;margin:17px 0 0}.err{min-height:1em;margin-top:10px;color:#ff9eab;font-size:.85rem}
+.section{padding:78px 0;border-top:1px solid var(--border)}.section-head{max-width:720px;margin-bottom:30px}.kicker{color:var(--blue);font-size:.75rem;letter-spacing:.14em;font-weight:800;text-transform:uppercase}.section h2{font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.25;margin:12px 0}.section-head p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.benefit{background:linear-gradient(165deg,rgba(23,43,74,.8),rgba(13,22,39,.8));border:1px solid var(--border);padding:27px;border-radius:19px}.number{color:#83caff;font:800 .82rem Sora,sans-serif;letter-spacing:.12em}.benefit h3{font-size:1.06rem;margin:18px 0 9px}.benefit p{font-size:.89rem;color:var(--muted);margin:0}
+.final-cta{margin:0 auto 80px;padding:34px;border:1px solid rgba(101,181,255,.3);border-radius:20px;background:linear-gradient(110deg,#12294c,#0d182c);display:flex;justify-content:space-between;align-items:center;gap:24px}.final-cta h2{font-size:1.45rem;margin:0 0 7px}.final-cta p{color:var(--muted);margin:0}.cta-link{flex-shrink:0;background:#83caff;color:#081b31;padding:14px 22px;border-radius:10px;font-weight:800;text-decoration:none}footer{border-top:1px solid var(--border);padding:27px 0;text-align:center;color:#8496b1;font-size:.77rem}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:36px;padding:55px 0}.formcard{max-width:610px;width:100%}.grid{grid-template-columns:1fr}.final-cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.wrap{width:min(100% - 30px,1160px)}.nav{min-height:68px}.brand{font-size:.87rem}.navlink{font-size:.73rem;padding:8px 10px}.hero{padding:43px 0 55px}h1{font-size:2.25rem}.lead{font-size:.98rem}.facts{grid-template-columns:1fr 1fr}.fact:last-child{grid-column:1/-1}.formcard{padding:25px 20px}.fields{grid-template-columns:1fr!important}.section{padding:52px 0}.final-cta{margin-bottom:50px;padding:25px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
-
-<header><div class="wrap"><div class="brand">Drop<span>Masterclass</span></div></div></header>
-
-<main class="wrap hero">
-  <section>
-    <span class="tag">Masterclass privada · En vivo</span>
-    <h1>Construye tu negocio de <em>dropshipping</em> desde cero, con un método claro</h1>
-    <p class="lead">Una sesión en vivo, directa y sin relleno, donde verás paso a paso cómo funciona el modelo, cómo elegir productos ganadores y cómo conseguir tus primeras ventas sin manejar inventario.</p>
-    <ul class="list">
-      <li><span class="ic"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="#1a1204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Cómo funciona realmente el dropshipping y qué necesitas para empezar</span></li>
-      <li><span class="ic"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="#1a1204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Cómo encontrar productos con potencial y proveedores confiables</span></li>
-      <li><span class="ic"><svg width="12" height="12" viewBox="0 0 20 20" fill="none"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="#1a1204" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>El plan de acción para conseguir tus primeras ventas</span></li>
-    </ul>
-    <div class="meta">
-      <div class="chip">Fecha<b>20 de octubre</b></div>
-      <div class="chip">Hora<b>20:00 hrs</b></div>
-      <div class="chip">Modalidad<b>En vivo · Online</b></div>
-    </div>
-  </section>
-
-  <section class="card" id="registro">
-    <div class="scarcity">
-      <span class="l"><span class="dot"></span>ACCESO SOLO PARA 50 PERSONAS</span>
-      <small>Quedan pocos</small>
-    </div>
-    <h2>Reserva tu lugar</h2>
-    <p class="sub">Completa tus datos y te llevaremos al grupo de WhatsApp con toda la información.</p>
-
-    <form id="form" novalidate>
-      <div class="row">
-        <div class="field">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required>
-        </div>
-        <div class="field">
-          <label for="apellido">Apellido</label>
-          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="family-name" required>
-        </div>
-      </div>
-      <div class="field">
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
-      </div>
-      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button type="submit" id="btn">Registrarme y unirme al grupo</button>
-      <div class="err" id="err" role="alert"></div>
-    </form>
-    <p class="note">Tus datos solo se usan para enviarte información de la masterclass.</p>
-  </section>
+<div class="topbar">MASTERCLASS GRATUITA EN VIVO <span>· MIÉRCOLES 04 NOV · 20:00 HRS CHILE</span></div>
+<header><div class="wrap nav"><div class="brand">VISIÓN <b>10K</b> <span style="font-weight:500;color:#8ca6c9">| MASTERY</span></div><a class="navlink" href="#registro">Reservar acceso gratuito</a></div></header>
+<main>
+<div class="wrap hero">
+<section aria-labelledby="titular">
+<div class="eyebrow"><span class="pulse"></span> Formación gratuita · Online por Zoom</div>
+<h1 id="titular">Aprende a construir tu negocio de <em>ecommerce desde cero.</em></h1>
+<p class="lead">Descubre cómo funciona el dropshipping, qué necesitas para empezar y los pasos para encontrar productos con potencial y crear una tienda online. Una masterclass en directo, clara y práctica.</p>
+<div class="facts">
+<div class="fact"><small>Fecha</small><strong>Miércoles 4 de noviembre</strong></div>
+<div class="fact"><small>Horario</small><strong>20:00 hrs · Chile</strong></div>
+<div class="fact"><small>Modalidad</small><strong>Zoom · En vivo</strong></div>
+</div>
+</section>
+<section class="formcard" id="registro" aria-labelledby="registro-titulo">
+<div class="free">INSCRIPCIÓN 100% GRATUITA</div>
+<h2 id="registro-titulo">Asegura tu acceso a la masterclass</h2>
+<p class="sub">Completa tus datos y únete al grupo de WhatsApp donde compartiremos la información de acceso.</p>
+<form id="form" novalidate>
+<div class="fields">
+<div class="field"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required></div>
+<div class="field"><label for="apellido">Apellido</label><input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="family-name" required></div>
+</div>
+<div class="field"><label for="email">Correo electrónico</label><input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required></div>
+<input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="submit" id="btn">QUIERO MI ACCESO GRATUITO →</button>
+<div class="err" id="err" role="alert" aria-live="polite"></div>
+</form>
+<p class="note">Al registrarte, utilizaremos tus datos para enviarte información relacionada con esta masterclass.</p>
+</section>
+</div>
+<section class="section"><div class="wrap"><div class="section-head"><span class="kicker">LO QUE APRENDERÁS</span><h2>Una ruta clara para comenzar en ecommerce</h2><p>Contenido diseñado para personas que quieren entender el modelo antes de dar sus primeros pasos.</p></div>
+<div class="grid">
+<article class="benefit"><span class="number">01 / FUNDAMENTOS</span><h3>Cómo funciona el dropshipping</h3><p>Conoce el modelo de negocio, sus principales etapas y lo que necesitas para empezar sin almacenar productos.</p></article>
+<article class="benefit"><span class="number">02 / PRODUCTOS</span><h3>Cómo analizar oportunidades</h3><p>Aprende criterios para evaluar productos, demanda y proveedores antes de crear una oferta.</p></article>
+<article class="benefit"><span class="number">03 / EJECUCIÓN</span><h3>De la idea a una tienda online</h3><p>Entiende los pasos básicos para preparar tu tienda y comenzar a trabajar en tus primeras ventas.</p></article>
+</div></div></section>
+<div class="wrap"><aside class="final-cta"><div><h2>Tu próximo paso comienza el 4 de noviembre</h2><p>Miércoles · 20:00 horas de Chile · Gratis por Zoom</p></div><a class="cta-link" href="#registro">Inscribirme gratis</a></aside></div>
 </main>
-
-<footer><div class="wrap">© <span id="y"></span> DropMasterclass. Todos los derechos reservados.</div></footer>
-
+<footer><div class="wrap">© <span id="y"></span> VISIÓN 10K MASTERY · Masterclass de Ecommerce. Los resultados dependen de la dedicación y ejecución de cada persona.</div></footer>
 <script>
   // ====== CONFIGURA ESTAS 2 LINEAS ======
   const SHEETS_URL   = "https://script.google.com/macros/s/AKfycbzGD4-8H1C66-RzYfDKu4vebjC-uTa3iTFaXQL45_LriP5Neg1vPIeDY2OvPireXmy1/exec";   // termina en /exec
@@ -186,5 +104,4 @@
     irAWhatsApp();
   });
 </script>
-</body>
-</html>
+</body></html>

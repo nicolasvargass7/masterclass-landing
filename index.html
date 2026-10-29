@@ -70,7 +70,7 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Sora,sans-serif}h1{font-size:clamp(
 <script>
   // ====== CONFIGURA ESTAS 2 LINEAS ======
   const SHEETS_URL   = "https://script.google.com/macros/s/AKfycbzGD4-8H1C66-RzYfDKu4vebjC-uTa3iTFaXQL45_LriP5Neg1vPIeDY2OvPireXmy1/exec";   // termina en /exec
-  const WHATSAPP_URL = "https://chat.whatsapp.com/BwSf7LONh2i9k2NslLoihC?mode=gi_t";
+  const WHATSAPP_URL = "https://walink.co/4of9ls";
   // ======================================
 
   document.getElementById('y').textContent = new Date().getFullYear();
@@ -95,7 +95,7 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Sora,sans-serif}h1{font-size:clamp(
     const body = new URLSearchParams({ nombre, apellido, email });
     const irAWhatsApp = () => { window.location.href = WHATSAPP_URL; };
 
-    // Si tarda demasiado, igual lo enviamos al grupo
+    // Envío de datos al Apps Script antes de redirigir; no-cors no permite confirmar el guardado
     const timer = setTimeout(irAWhatsApp, 5000);
     try {
       await fetch(SHEETS_URL, { method: 'POST', mode: 'no-cors', body });
